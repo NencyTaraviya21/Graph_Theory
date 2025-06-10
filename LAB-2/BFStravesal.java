@@ -31,14 +31,13 @@ public class BFStravesal {
 
         while(front<rear){
             int curr = queue[front++]; //deqeueu
-            System.out.println(curr+" ");
+            System.out.print(curr+" ");
 
             for(int i=0;i<arr[curr].length;i++){
                 int neigbour = arr[curr][i];
                 if(!visited[neigbour]){
                     visited[neigbour]=true;
-                    queue[rear++]=neigbour;
-                    
+                    queue[rear++]=neigbour;    
                 }
             }
             
